@@ -1,1 +1,1 @@
-# whatthefuckisethereum
+[What The Fuck is Ethereum?](http://whatthefuckisethereum.com)
