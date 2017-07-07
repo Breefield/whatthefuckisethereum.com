@@ -12,6 +12,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/lity.css">
+        <link rel="stylesheet" href="css/prism.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -21,39 +23,373 @@
 
         <!-- Add your site or application content here -->
         <div id="content">
-            <h1>What The Fuck Is Ethereum?</h1>
+            <div class="header">
+                <h1 id="main-title"><a href="https://youtu.be/jPLKXEUm0jE" data-lity>What The Fuck Is</a> Ethereum?</h1>
+            </div>
 
-            <p>TLDR: <a href="http://ethereum.org" target="blank">Etherum</a> is a <i>computing platform</i> running on computers all over the world. To run programs on the network you pay <a href="https://ethereum.org/ether">Ether</a> (<a href="https://poloniex.com/exchange#usdt_eth">ETH</a>); you can program on the Ethereum network using a language named <a href="https://solidity.readthedocs.io/en/develop/">Solidity</a>.</p>
+            <p>TLDR: <a href="http://ethereum.org" target="blank">Etherum</a> is a <i>computing platform</i> running on computers all over the world. To run programs on the network you pay <a href="https://ethereum.org/ether" target="blank">Ether</a> (<a href="https://poloniex.com/exchange#usdt_eth">ETH</a>); you can program on the Ethereum network using a language named <a href="https://solidity.readthedocs.io/en/develop/" target="blank">Solidity</a>.</p>
 
             <hr/>
 
-             <!-- Begin MailChimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-            <form action="//breefield.us2.list-manage.com/subscribe/post?u=ca1f960404b8ab4b04524cd9c&amp;id=e27959571f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Subscribe to learn more about Ethereum!</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ca1f960404b8ab4b04524cd9c_e27959571f" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-            </form>
+            <div id="select-container">
+                <label for="audience_select">Ok now, explain it like</label>
+                <select id="audience-select">
+                    <option value="average-joe">I'm an average person just trying to get by</option>
+                    <option value="nerd">I'm a total nerd</option>
+                    <option value="five">I'm five</option>
+                    <option value="visual-learner">I like videos</option>
+                    <option value="podcast">I like podcasts</option>
+                    <option value="entrepreneur">I'm an entrepreneur</option>
+                    <option value="rational-skeptic">I'm a rational skeptic</option>
+                    <option value="scammer">I'm a scammer</option>
+                    <option value="artist">I'm an artist/creator</option>
+                    <option value="philosopher">I'm a stoner/wanna be philosopher</option>
+                    <option value="investor">I want to make a buck investing</option>
+                    <option value="fukkin-djs">I'm a DJ</option>
+                </select>
             </div>
 
-            <!--End mc_embed_signup-->
+            <div id="explanations">
+                <!-- I'm five -->
+                <div id="five" class="hidden">
+                    <h2>Don't say fuck</h2>
+                    <p>
+                        Ethereum is a way for a bunch of computers to talk to each other. People can ask these computers to run programs that can't easily be shut down because all the computers share the code with each other.
+                        <br/><br/>
+                        If you want to run a program that takes a long time to finish, you have to pay the computers in the network a currency called Ether.
+                    </p>
+                </div>
 
-            <p>More info coming soon! Want to contribute content, please email <a href="mailto:dustin.hoffman@breefield.com">D Tunes.<a/></p>
+                <!-- I'm an visual learner -->
+                <div id="visual-learner" class="hidden">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j23HnORQXvs" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TDGq4aeevgY" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- I'm an scammer -->
+                <div id="scammer" class="hidden">
+                    <h2>An unregulated, global financial market with a multimillion USD market cap, yes please!</h2>
+
+                    <p>Why would you want to create a scam using Ethereum? Well, because it's a financial wild west: unregulated, unsafe, and large enough you can hide in plain sight.</p>
+
+                    <h2>Ponzi Schemes</h2>
+                    <p>So, first-off let's talk about ponzi schemes. Ethereum executes smart contracts that allow you to strictly enforce the execution of a ponzi scheme with no oversight after people start buying in. The code will continue executing indefinitely.
+                    <br/><br/>
+                    Some researchers from Cornell University did <a href="https://arxiv.org/pdf/1703.03779.pdf" target="blank">extensive research</a> to discover, classify, and analyze ponzi schemes running on the the Ethereum platform. I'll summarize their findings like this: those participating in the ponzi schemes were <a href="https://forum.ethereum.org/discussion/4632/introducing-dynamic-pyramid-3x-1-2x-payouts-verified-contract" target="blank">doing so</a> <a href="https://ponzico.win" target="blank">knowningly</a>.</p>
+
+                    <p>From the PDF:</p>
+                    <blockquote>
+                        Still, it is foreseeable that, as Ethereum consolidates its position as a platform for smart contracts and as a cryptocurrency, criminals will exploit it to host their scams. Besides the growth of traditional Ponzi schemes accepting ether, we expect a second wave of Ponzi schemes, but very likely they will be less recognizable as such than the ones collected in this survey. For instance, they could mix multi-level marketing, token sales, and games, to realize complex smart contracts, which would be very hard to correctly classify as Ponzi schemes or legit investments.
+                        <br/><br/>
+                        Our analysis suggests that there is still time to devise suitable policy interventions, and provides a first understanding of the issues that must be tackled in this direction.
+                    </blockquote>
+
+                    <h2>ICOs</h2>
+                    <p>
+                        An ICO stands for an "Initial Coin Offering", which is a way for anyone to raise money using the Ethereum platform. One would simply make a website stating what problem the company is trying to solve, they list their ICO on one of <a href="https://www.ico-list.com/" target="blank">many</a> <a href="https://www.coinschedule.com/" target="blank">websites</a>.
+                        <br/><br/>
+                        As of June 2017, I'm going to keep ICOs on the "explain it like I'm a scammer page" because I don't believe there is enough accountability in the community surrounding 2 things:
+                    </p>
+                    <ul>
+                        <li>Truthfully stating what the company intends to accomplish.</li>
+                        <li>Being held accountable for producing results.</li>
+                        <li>Not overhyping their ICO using tactics like "IPCO windows" where the ICO launches at a specific date and ends at a fixed time.</li>
+                    </ul>
+                    <p>
+                        Essentially, many regulations that exist in existing financial markets exist for a reason. Not having some of these regulations leads to unsafe investments.
+                    </p>
+                    <hr/>
+                    <p>
+                        Know of some scammy behavior I didn't list here? Please <a href="mailto:dustin.hoffman@breefield.com">email me.</a>
+                    </p>
+                </div>
+
+                <!-- I'm an average joe -->
+                <div id="average-joe">
+                    <h2>Ethereum is kinda nerdy</h2>
+                    <p>But that's ok, so is the internet. It's not hard to understand though, so don't be scared by all of the jargon! Here are a few keywords to get started.</p>
+                    <ul>
+                        <li><b>Decentralized</b> - computers located  all over the world, working together, if half of the computers are turned off, the other half will continue operating as if nothing happened.
+                        <li><b>Cryptocurrency</b> - a kind of digital money that gets it's value from having computers do hard math problems.</li>
+                        <li><b>Computing Platform</b> - this is a fancy way of saying a network of computers that run programs together.</li>
+                    </ul>
+
+                    <p>Ok! So now we're going to put all those terms together to try and explain what Ethereum is.
+                    <br/><br/>
+                    Ethereum is a decentralized computing platform that executes programs, in order to pay for the computing power used to execute these programs you pay with a cryptocurrency called Ether.
+                    </p>
+
+                    <h2>So what, why do people care about Ethereum so much?</h2>
+                    <p>
+                    If you've heard about Etherem it's probably for one of two reasons:
+                    </p>
+                    <ol>
+                        <li><b>Speculative investing</b> - because you can buy Ether at places called <a href="http://coinbase.com" target="blank">exchanges</a> and more and more people are buying Ether, less of it is available and so the price is rising. However, like buying stocks in the stock market where companies can have ups and downs, Ethereum could experience this too, and the Ether people buy could lose value very rapidly.</li>
+                        <li><b>Technological excitement</b> - many people are excited about Ethereum because, much in the same was that the internet changed how everyone communicates, Ethereum has the potential to change how much of the world exchanges money, and organizes around trust.</li>
+                    </ol>
+
+                    <h2>Ok, so should I do anything about it?</h2>
+                    <p>
+                        Probably not right now, unless you're pretty nerdy or you <a href="index.html#investor">understand how investing works<a/> (and have money to lose). Ethereum is too new a technology to worry about.
+                    </p>
+                </div>
+
+                <!-- I'm an entrepreneur -->
+                <div id="entrepreneur" class="hidden">
+                    <h2>Raising Money on Ethereum Blockchain</h2>
+
+                    <p>
+                        So, elsewhere on this website I mention that ICOs are potentially scammy vehicles for unscrupulous fundraising. Conversely, token offerings can be used by companies that are indeed legitimate in order to raise money for their projects. Ethereum initially raised money to start the project itself using Bitcoin, and has gone on to build off the smart contract system intrinsic in it's own platform to <a target="blank" href="https://www.ethereum.org/token">allow anyone to create a token</a>.
+                    </p>
+
+                    <h2>Wait, What are Tokens Exactly?</h2>
+                    <p>
+                        Tokens are a digital asset (specific to a particular project/company) that can be used like a currency, build on top of the Ethereum blockchain. In order to acquire a particular token you would exchange ETH for that token. Different tokens may have different contracts though, so not all tokens are created equally, but generally in an ICO tokens are being used like stocks, allowing you to own a portion of a company in exchange for ETH. The value of the token changes based on demand for that particular token, and you can convert your holdings of a certain token back to ETH by selling it on <a target="blank" href="https://poloniex.com/exchange#btc_eth">an exchange that lists ETH tokens</a> (or in person).
+                        If you want to know more I highly recommend <a target="blank" href="https://blog.coinbase.com/a-beginners-guide-to-ethereum-tokens-fbd5611fe30b">this blog post</a> written by <a href="https://medium.com/@linda.xie">Linda Xie.</a>
+                    </p>
+
+                    <h2>Existing Companies that have done ICOs</h2>
+                    <ul>
+                        <li><a href="https://augur.net/" target="blank">Augur</a>
+                        <li><a href="https://golem.network" target="blank">Golem</a>
+                        <li><a href="https://z.cash/" target="blank">Zcash</a>
+                        <li><a href="https://lisk.io/" target="blank">Lisk</a>
+                        <li><a href="https://steem.io/" target="blank">Steem</a>
+                        <li><a href="https://gnosis.pm/" target="blank">Gnosis</a>
+                        <li><a href="https://www.bancor.network/" target="blank">Bancor</a>
+                    </ul>
+                </div>
+
+                <div id="nerd" class="hidden">
+                    <h2>Resources For Going Deep:</h2>
+                    <p>
+                        This list of intermediate resources was taken from <a href="https://docs.google.com/document/d/1ejYCWkHQIRInXB4VifoHevom8CWVJ69zFVfP4J2fjSU/edit#" target="blank">a Google Doc released the organizers of the <a href="https://www.facebook.com/events/481621582177570/" target="blank">Ethereum Deep Dive</a> hosted at UC Berkeley. I copied it to this website in the event the document becomes inaccessible. The expected read time for all this material was 5 hours.
+                    <p>
+
+                    <h3>Design:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Design-Rationale" target="blank">Design Rationale</a> - "The purpose of this document will be to detail all of the finer potentially nonobvious or in some cases controversial decisions that were made in the process of building the Ethereum protocol, as well as showing the risks involved in both our approach and possible alternatives."" ― 36 minute read
+                        </li>
+                        <li>
+                            <a href="https://ethereum.github.io/yellowpaper/paper.pdf" target="blank"></a> - The technical Bible of Ethereum, a formal definition of the protocol, very math-heavy; a rigorous discussion of Ethereum’s "design, implementation issues, the opportunities it provides and the future hurdles" envisaged ― 54 minute read
+                        </li>
+                        <li>
+                            <a href="https://cdn.hackaday.io/files/10879465447136/Mauve%20Paper%20Vitalik.pdf" target="blank">Mauve paper</a> - Technical discussion of in-development scaling features of Ethereum, namely, a combination of proof-of-stake and sharding ― 27 minute read
+                        </li>
+                        <li>
+                            <a href="https://eprint.iacr.org/2013/881.pdf" target="blank">GHOST Protocol</a> - Seminal 2013 paper that introduced the GHOST Protocol, of which Ethereum implements a simplified version, and which combats the security and centralization issues of fast block time blockchains ― 56 minute read
+                        </li>
+                    </ul>
+
+                    <h3>Economics:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://blog.ethereum.org/2016/07/27/inflation-transaction-fees-cryptocurrency-monetary-policy/" target="blank">Monetary Policy</a> - Analysis of cryptocurrency monetary policy possibilities to best meet objectives of network security, aligned incentives, and supply predictability ― 15 minute read
+                        </li>
+                        <li>
+                            <a href="https://github.com/LeastAuthority/ethereum-analyses/blob/master/GasEcon.md" target="blank">Gas Economics</a> - Explores the question, "does [the Gas Economics model] provide the right incentives and protections to miners, verifiers, clients, and the system as a whole?" Also explores "the ways in which Ethereum programs can be composed, with an eye towards managing the incentives and risks experienced by the cooperating/competing program authors." ― 55 minute read
+                        </li>
+                    </ul>
+
+                    <h3>Cryptography:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Ethash" target="blank">ETHash</a> - Formal specification for Ethereum’s GPU-friendly, ASIC-resistant proof-of-work hashing algorithm ― 8 minute read
+                        </li>
+                        <li>
+                            <a href="https://github.com/LeastAuthority/ethereum-analyses/blob/master/PoW.md" target="blank">Analysis of ETHash</a> - Thorough analysis, including overview and analyses of its design, feasibility, and randomizing functions ― 37 minute read
+                        </li>
+                        <li>
+                            <a href="https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/" target="blank">Why Patricia Trees</a> - Quick introduction to how merkle trees work, their present and future value for blockchains, and basic reasoning behind Ethereum’s "Merkle Patricia Tree" ― 9 minute read
+                        </p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Patricia-Tree" target="blank">Patricia Trees</a> - Detailed specification ― 8 minute read
+                        </li>
+                    </ul>
+
+                    <h3>Privacy:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/" target="blank">Privacy on the Blockchain</a> - Discussion of how to increase privacy on the blockchain (cryptographically secure obfuscation, secure multi-party computation, low-tech approaches), and the future of privacy ― 20 minute read
+                        </li>
+
+                    </ul>
+
+                    <h3>Security:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://eprint.iacr.org/2016/633.pdf" target="blank">Oyente paper </a> - Proposal for fixing security flaws in Ethereum smart contracts ― 52 minute read
+                        </li>
+
+                    </ul>
+
+                    <h3>Proof of Stake:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ" target="blank">Proof of Stake FAQ</a> -  Guided FAQ, best read in order ― 42 minute read
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@VitalikButerin/minimal-slashing-conditions-20f0b500fc6c" target="blank">Minimal Slashing Conditions</a> - Explanation of slashing conditions that allow Casper, the protocol for Ethereum proof-of-stake, to achieve economic finality ― 14 minute read
+                        </li>
+                        <li>
+                            <a href="https://blog.ethereum.org/2015/12/28/understanding-serenity-part-2-casper/" target="blank">Understanding Casper</a> - Explanation of Casper PoS Economics ― 20 minute read
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@AFDudley/casper-as-i-understand-it-c0ceb6c6e49a" target="blank">Casper, as I understand It </a> - 3rd party analysis  of Casper compared to Tendermint consensus.  Rick Dudley is highly recommended expert by Sunny Aggarwal. ― 5 minute read
+                        </li>
+                    </ul>
+
+                    <h3>Sharding:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQ" target="blank">Sharding FAQ</a> - Another guided FAQ, best read in order ― 52 minute read
+                        </li>
+                        <li>
+                            <a href="http://vitalik.ca/files/basic_sharding.html" target="blank">Sharding v1 Proposal</a> - Ethereum sharding specification ― 8 minute read
+                        </li>
+                    </ul>
+
+                    <h3>Other:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ethereum/wiki/wiki/Problems" target="blank">Challenges</a> - Explanation of the abundant technological, consensus-related, and economic problems the blockchain community has yet to solve ― 60 minute read
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- I'm an artist -->
+                <div id="artist" class="hidden">
+                    <h2>Ethereum for Artists &amp; Creators</h2>
+
+                    <p>
+                        Some inspiration:
+                    </p>
+                    <ul>
+                       <li>
+                            <b>Mine tokens with a 3D modelling rig</b> -  If you have  GPU sitting around, it could make you money <a href="https://motherboard.vice.com/en_us/article/59zdjq/an-idiots-guide-to-building-an-ethereum-mining-rig" target="blank">mining ETH</a>.
+                        </li>
+                        <li>
+                            <b>Sell digital goods</b> - RAC will <a href="https://motherboard.vice.com/en_us/article/nevzbz/this-dj-has-released-the-first-full-length-album-using-the-ethereum-blockchain" target="blank">release their new album EGO</a> via the Ethereum network on July 14, 2017. You could do something like this.
+                        </li>
+                        <li>
+                            <b>Make a visualization of the blockchain that is easier for humans to read</b> - Let's be honest <a href="https://etherscan.io/txs">ledgers are boring to look at</a>, you could <a href="https://www.google.com/search?q=node+visualization&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjh9oCmkvjUAhXBx4MKHcebCSMQ_AUICigB&biw=1440&bih=780">do something interesting</a> to express market transactions within ETH.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- I'm an artist -->
+                <div id="fukkin-djs" class="hidden">
+                    <h2>Ethereum probably won't get you laid</h2>
+                    <p>Sorry not sorry. Yes, I'm probably jealous of all the fun you're having while I'm here writing content.</p>
+                </div>
+
+                <!-- I'm an investor -->
+                <div id="philosopher" class="hidden">
+                    <a href="https://steemit.com/ethereum/@rebelskum/explain-ethereum-like-i-m-a-stoner-wanna-be-philosopher-part-ii">Heady analysis provided by my friend Ryan Zimmerman.</a>
+                    <blockquote>
+                        <p>
+                            Imagine the Ethereum Network like a giant, global dispensary and farmer's co-op that nobody owns. Instead, members of the network pitch in the occasional bud (computer resources) when someone about to have a much bigger party (C++ developers, wizards, etc.) needs to borrow from the stash. These "parties" could be all kinds of things from distributed movie renderings to web applications.
+                        </p>
+
+                        <p>
+                            Unlike bumming your friend smokes, however, or central banks, user of your "bud" is backed by "smart contracts" which ensure that participants of the Ethereum Network are compensated even if the party really sucked. This means more parties, bigger parties and better yet, parties which can't leave everyone broke.
+                        </p>
+
+                        <p>
+                            The Dude abides...
+                        </p>
+                        <img src="img/dude.png"/>
+                    </blockquote>
+                </div>
+
+                <!-- I'm an investor -->
+                <div id="investor" class="hidden">
+                    <h2>Investing in Volatile Markets</h2>
+                    <p>There are 2 rules:</p>
+                    <ol>
+                        <li>Only invest what you are 100% willing to lose</li>
+                        <li>Understand you are investing in a very volatile market</li>
+                    </ol>
+
+                    <h2>Resources:</h2>
+                    <ul>
+                        <li>My favorite online wallet/exchange is called <a href="http://coinbase.com" target="blank">Coinbase</a>. It allows you to convert USD to BTC and ETH.</li>
+                        <li>I recommend the exchange <a href="https://poloniex.com/exchange" target="blank">POLONIEX</a> for keeping track of individual ETH coins, and analysing the market.</li>
+                        <li><a href="https://coinmarketcap.com/" target="blank">Coin Market Cap</a> is a great resource for understanding overall value of a certain coins.</li>
+                        <li>If you are specifically interested in divesting from BTC and investing in ETH, check out <a href="http://www.flippening.watch/" target="blank">The flippening</a>.</li>
+                    </ul>
+                </div>
+
+                <!-- I'm an rational-skeptic -->
+                <div id="rational-skeptic" class="hidden">
+                    <h2>Some Technologies Fail, Here's why Ethereum Might</h2>
+                    <p><a href="https://www.reddit.com/r/ethtrader/comments/6lgf0l/vitalik_drops_the_mic_on_rbtc/dju1y8q/" target="blank">Vitalik Buterin (one of Ethereum's creators) acknoweledges Ethereum has looming issues</a> which need to be solved:</p>
+
+                    <blockquote>
+                        <ol>
+                            <li>Scalability sucks; the blockchain design fundamentally relies on bottlenecks where individual nodes must process every single transaction in the entire network</li>
+                            <li>PoW is extremely expensive, and furthermore is fundamentally vulnerable to 51% spawn camping attacks with no effective strategy for recovering from one. Selfish mining is profitable starting at 25-33% hashpower, and 51% censorship attacks are definitely profitable.</li>
+                            <li>Privacy sucks</li>
+                            <li>It's hard for regular users to hold large amounts of funds without running substantial risks of theft or loss due to theft or loss of their private keys.</li>
+                            <li>Economics do not encourage good "storage hygiene"; insufficient incentives for clearing storage and insufficient cost for filling it, especially for long periods of time</li>
+                            <li>Bunch of various marginal technical inefficiencies.</li>
+                        </ol>
+                    </blockquote>
+                </div>
+
+                <div id="podcast" class="hidden">
+                    <p>Hopefully you like Tim Ferris&mdash;if you have reservations about his ideology, note this: in this podcast he speaks asks some pretty simple questions to both <a href="https://twitter.com/nickszabo4" target="blank">Nick Szabo</a> (an academic) and <a href="https://angel.co/naval" target="blank">Naval Ravikant</a> (an investor).
+                    </p>
+                    <audio controls>
+                      <source src="http://traffic.libsyn.com/timferriss/The_Tim_Ferriss_Show_-_Nick_Szabo.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                    </audio>
+                    <p>
+                    The questions they cover in the episode are the following:
+                    <p>
+
+                    <ul>
+                        <li>What is Bitcoin, what are cryptocurrencies, and what problem do they solve?</li>
+                        <li>What is "social scalability?"</li>
+                        <li>What is Ethereum and what makes it unique? Strengths and weaknesses?</li>
+                        <li>How will smart contracts actually get adopted or go mainstream?</li>
+                        <li>What are ICOs (Initial Coin Offerings)?</li>
+                        <li>Blockchain governance — is there any existential risk?</li>
+                        <li>"Wet" versus "dry" code</li>
+                        <li>Pascal’s scams</li>
+                        <li>Quantum thought</li>
+                        <li>What fields will you be working on in the future?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div id="footer">
+                <span class="item">
+                    <a href="http://whatthefuckisethereum.com">WhatTheFuckIsEthereum.com</a>
+                </span>
+                <span class="item">
+                    This website is not owned by or affiliated with <a href="https://entethalliance.org/" target="blank">The Ethereum Alliance</a>
+                </span>
+                <span class="item">
+                    Want to help translate this website or add content? Please <a href="mailto:dustin.hoffman@breefield.com">contact me</a>.
+                </span>
+                <br/>
+                <span class="item">
+                    Want to support this website? send ETH to: <i>0x1c4d1804AD9d47de0D4209882843998E03E30dF9</i>
+                </span>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/prism.js"></script>
+        <script src="js/vendor/lity.js"></script>
         <script src="js/main.js"></script>
 
         <script>
