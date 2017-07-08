@@ -318,3 +318,25 @@ audio {
         page-break-after: avoid;
     }
 }
+
+.social-buttons {
+  display: inline-block;
+  position: relative;
+}
+
+.social-buttons .fb-like {
+  position: relative;
+  top: -9px;
+}
+
+#footer {
+  margin-bottom: 10px;
+}
+
+h1 .twitter-share-button {
+  margin-left: 5px;
+}
+
+.bottom-twitter-share-button {
+  margin-bottom: 10px;
+}

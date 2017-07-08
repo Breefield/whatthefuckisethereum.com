@@ -16,15 +16,28 @@
         <link rel="stylesheet" href="css/prism.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=241719455859280";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>   <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="content">
+      <div id="content">
             <div class="header">
-                <h1 id="main-title"><a href="https://youtu.be/jPLKXEUm0jE" data-lity>What The Fuck Is</a> Ethereum?</h1>
+              <h1 id="main-title">
+                <a href="https://youtu.be/jPLKXEUm0jE" data-lity>What The Fuck Is</a> Ethereum?
+                <div class="social-buttons">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-text="What the fuck is ethereum? An explainer." data-url="http://whatthefuckisethereum.com/" data-related="breefield" data-show-count="true" style="font-size: 10px;color: white;">Tweet</a>
+                  <div class="fb-like" data-href="http://whatthefuckisethereum.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                </div>
+              </h1>
             </div>
 
             <p>TLDR: <a href="http://ethereum.org" target="blank">Etherum</a> is a <i>computing platform</i> running on computers all over the world. To run programs on the network you pay <a href="https://ethereum.org/ether" target="blank">Ether</a> (<a href="https://poloniex.com/exchange#usdt_eth">ETH</a>); you can program on the Ethereum network using a language named <a href="https://solidity.readthedocs.io/en/develop/" target="blank">Solidity</a>.</p>
@@ -368,6 +381,10 @@
 
             <hr/>
 
+            <div class="bottom-twitter-share-button">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="What the fuck is ethereum? An explainer." data-url="http://whatthefuckisethereum.com/" data-related="breefield" data-show-count="true" style="font-size: 10px;color: white;">Tweet</a>
+              <div class="fb-like" data-href="http://whatthefuckisethereum.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+            </div>
             <div id="footer">
                 <span class="item">
                     <a href="http://whatthefuckisethereum.com">WhatTheFuckIsEthereum.com</a>
@@ -402,5 +419,6 @@
           ga('send', 'pageview');
 
         </script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </body>
 </html>
