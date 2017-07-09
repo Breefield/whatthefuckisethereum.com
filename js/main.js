@@ -9,6 +9,7 @@
 
   // Selector logic
   $('#audience-select').on('change', function(e) {
+    console.log('Selected:', $(e.target).val());
     showContent($(e.target).val());
   });
 
@@ -17,4 +18,6 @@
   if(hash) {
     showContent(hash.replace('#', ''));
   }
+  
+  console.log('Events initialized');
 })(jQuery);
