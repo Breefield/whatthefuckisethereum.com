@@ -110,7 +110,13 @@ textarea {
 }
 
 #select-container {
-    font-size:  1.2em;
+    font-size:  0.8em;
+}
+
+@media (max-width: 600px) {
+   #select-container {
+      font-size: 1em;
+   }
 }
 
 #explanations {
